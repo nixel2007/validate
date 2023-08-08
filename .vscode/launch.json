@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Отладка 1Script",
+            "type": "oscript",
+            "request": "launch",
+            "program": "${file}",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "env": {},
+            "runtimeExecutable": null,
+            "runtimeArgs": [],
+            "debugPort": 2801,
+            "protocol": "tcp"
+        }
+    ]
+}

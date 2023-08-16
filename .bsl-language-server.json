@@ -2,7 +2,7 @@
     "diagnostics": {
         "parameters": {
             "Typo": {
-                "userWordsToIgnore": "Валидаций"
+                "userWordsToIgnore": "Валидаций,Валидатор,Валидировать"
             }
         }
     }

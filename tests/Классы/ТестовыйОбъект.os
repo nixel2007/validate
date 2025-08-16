@@ -1,3 +1,6 @@
+// BSLLS:MissingVariablesDescription-off
+// BSLLS:ExportVariables-off
+
 &Заполнено(Сообщение = "Произвольное сообщение")
 Перем Поле1 Экспорт;
 

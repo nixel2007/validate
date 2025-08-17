@@ -1,6 +1,9 @@
 {
     "diagnostics": {
         "parameters": {
+            "LineLength": {
+                "maxLineLength": 140
+            },
             "Typo": {
                 "userWordsToIgnore": "Валидаций,Валидатор,Валидировать"
             }

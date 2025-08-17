@@ -2,6 +2,8 @@
 
 [![Тестирование](https://github.com/nixel2007/validate/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/nixel2007/validate/actions/workflows/test.yml?query=branch%3Amaster)
 [![Quality Gate](https://sonar.openbsl.ru/api/project_badges/measure?project=validate&metric=alert_status)](https://sonar.openbsl.ru/dashboard?id=validate)
+[![Coverage](https://sonar.openbsl.ru/api/project_badges/measure?project=validate&metric=coverage)](https://sonar.openbsl.ru/dashboard?id=validate)
+
 
 Валидация объектов на основе правил-аннотаций для OneScript.
 

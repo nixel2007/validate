@@ -4,6 +4,9 @@
             "LineLength": {
                 "maxLineLength": 140
             },
+            "IncorrectLineBreak": {
+                "listOfIncorrectFirstSymbol": ";|,\\s*\\S+"
+            },
             "Typo": {
                 "userWordsToIgnore": "Валидаций,Валидатор,Валидировать"
             }

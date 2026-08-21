@@ -11,6 +11,15 @@ jobs:
       fail-fast: false
       matrix:
         oscript_version: ['default', 'stable', 'dev']
+        test_engine: ['1testrunner']
+        # OneUnit требует OneScript 2.0 и выше, поэтому на версии движка
+        # из packagedef он не запускается.
+        include:
+          - oscript_version: 'stable'
+            test_engine: 'oneunit'
+          - oscript_version: 'dev'
+            test_engine: 'oneunit'
     uses: autumn-library/workflows/.github/workflows/test.yml@main
     with:
-      oscript_version: ${{ matrix.oscript_version }} 
+      oscript_version: ${{ matrix.oscript_version }}
+      test_engine: ${{ matrix.test_engine }}

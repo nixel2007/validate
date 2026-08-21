@@ -313,13 +313,29 @@ opm install validate
 
 ## Запуск тестов
 
-В проект включены авто-тесты на 1testrunner. Запустить можно так:
+Тесты лежат в каталоге `tests` и написаны так, что выполняются обоими движками
+тестирования - 1testrunner и OneUnit.
+
+### 1testrunner
 
 ```bash
 oscript tasks/test.os
 ```
 
 Результаты в формате JUnit сохраняются в каталоге `out`.
+
+### OneUnit
+
+OneUnit требует OneScript 2.0 и выше и ставится отдельно от зависимостей проекта:
+
+```bash
+opm install -l oneunit
+./oscript_modules/bin/oneunit e
+```
+
+Транзитивные зависимости OneUnit остаются внутри его поставки, поэтому в
+`tests/oscript.cfg` каталог `oscript_modules/oneunit/oscript_modules` добавлен
+в пути поиска библиотек.
 
 ### Покрытие кода
 
